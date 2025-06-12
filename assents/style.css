@@ -1,0 +1,142 @@
+/*Fontes */
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+/*geral*/
+*{
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-size: 200% 200%;
+    animation: float 10s, linear infinite alternate;
+    background-image: linear-gradient(to bottom right, #3affde 0%, #5b9dff 40%, #9f6bff 60%, #ff34d6 100%);
+}
+
+
+/* header*/
+header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+}
+
+header img {
+    width: 200px;
+    
+}
+
+
+
+
+
+@keyframes float {
+    0% {
+        background-position: 0% 0%;
+    }
+    
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
+section{
+    padding: 45px;
+    background-color: #fff;
+    width: 500px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap:  20px;
+    box-shadow: 2px 15px 20px rgba(61,61,61,.4);
+}
+
+
+
+header h3{
+    color: #5b9dff;
+    font-size: 1.34rem;
+}
+
+/* main */
+main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 25px;
+}
+
+header p{
+    padding: 10px;
+}
+
+main a {
+    background-color: #63a0e6;
+    padding: 15px 0;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 4px;
+    box-shadow: 10px 10px #eeaeCa;
+    transition: all .6s ease-in-out;
+}
+
+main a:hover {
+    box-shadow: 10px 10px #eeaeC0;
+    transform: translate(-1px, -5px);
+}
+
+
+/*footer*/
+.footer {
+   position: absolute;
+   bottom: 10px;
+   color: aliceblue;
+    font-size: 0.8rem;
+}
+
+
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+    color: #f5f5f5;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    left: 0;
+    background: transparent;
+    font-size: 0.8rem;
+    z-index: 10;
+}
+
+
+/* responsividade */
+@media (max-width: 520px){
+    section{
+        width: 90%;
+        padding: 30px;
+    }
+    header img{
+        width: 100px;
+    }
+    header h3{
+        font-size: 1.3rem;
+    }
+    main{
+        gap: 15px;
+    }
+    main a{
+        padding: 10px 0;
+        box-shadow: 5px 5px #eeaeca;
+    }
+}
